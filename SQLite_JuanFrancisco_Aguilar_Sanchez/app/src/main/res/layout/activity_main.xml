@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="CURSOS"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CODIGO:" />
+
+            <EditText
+                android:id="@+id/editCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CURSO:" />
+
+            <EditText
+                android:id="@+id/editCurso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPCIÓN:" />
+
+            <EditText
+                android:id="@+id/editDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn_Agregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Botonera"
+                android:text="AGREGAR" />
+
+            <Button
+                android:id="@+id/btn_Editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Botonera"
+                android:text="EDITAR" />
+
+            <Button
+                android:id="@+id/btn_Eliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Botonera"
+                android:text="ELIMINAR" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_Mostrar"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="Botonera"
+                    android:text="MOSTRAR" />
+
+                <Button
+                    android:id="@+id/btn_MostrarTodo"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:onClick="Botonera"
+                    android:text="MOSTRAR TODO" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtlista"
+                android:layout_width="match_parent"
+                android:layout_height="133dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
